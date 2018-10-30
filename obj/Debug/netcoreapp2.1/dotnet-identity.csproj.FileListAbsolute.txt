@@ -1,0 +1,14 @@
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/bin/Debug/netcoreapp2.1/dotnet-identity.deps.json
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/bin/Debug/netcoreapp2.1/dotnet-identity.runtimeconfig.json
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/bin/Debug/netcoreapp2.1/dotnet-identity.runtimeconfig.dev.json
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/bin/Debug/netcoreapp2.1/dotnet-identity.dll
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/bin/Debug/netcoreapp2.1/dotnet-identity.pdb
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/obj/Debug/netcoreapp2.1/dotnet-identity.csprojResolveAssemblyReference.cache
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/obj/Debug/netcoreapp2.1/dotnet-identity.csproj.CoreCompileInputs.cache
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/obj/Debug/netcoreapp2.1/dotnet-identity.RazorAssemblyInfo.cache
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/obj/Debug/netcoreapp2.1/dotnet-identity.RazorAssemblyInfo.cs
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/obj/Debug/netcoreapp2.1/dotnet-identity.AssemblyInfoInputs.cache
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/obj/Debug/netcoreapp2.1/dotnet-identity.AssemblyInfo.cs
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/obj/Debug/netcoreapp2.1/dotnet-identity.RazorTargetAssemblyInfo.cache
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/obj/Debug/netcoreapp2.1/dotnet-identity.dll
+/Users/nromero/Projects/Personal/dotnet/dotnet-identity/obj/Debug/netcoreapp2.1/dotnet-identity.pdb
