@@ -52,8 +52,7 @@ namespace dotnet_identity.Controllers
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);
-
-            if (!result.Succeeded) return StatusCode((int) HttpStatusCode.Unauthorized, result.Errors);
+            if (!result.Succeeded) return StatusCode((int) HttpStatusCode.BadRequest, new {errors = result.Errors});
             await _signInManager.SignInAsync(user, false);
             return await GenerateJwtToken(model.Email, user);
         }
@@ -80,7 +79,7 @@ namespace dotnet_identity.Controllers
                 signingCredentials: creds
             );
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            return new { message = "You are successfully logged in", token = new JwtSecurityTokenHandler().WriteToken(token)};
         }
         
         public class LoginDto
@@ -99,7 +98,7 @@ namespace dotnet_identity.Controllers
             public string Email { get; set; }
 
             [Required]
-            [StringLength(100, ErrorMessage = "PASSWORD_MIN_LENGTH", MinimumLength = 6)]
+            [StringLength(100, ErrorMessage = "The password must have 6 characters", MinimumLength = 6)]
             public string Password { get; set; }
         }
     }
