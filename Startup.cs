@@ -17,6 +17,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using dotnet_identity.Extensions;
+using Microsoft.AspNetCore.Http;
 
 namespace dotnet_identity
 {
@@ -27,7 +29,7 @@ namespace dotnet_identity
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        private IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -76,6 +78,10 @@ namespace dotnet_identity
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseMvc();
+            app.Run(async (context) => {
+                await context.Response.WriteAsync("Application started.");
+            });
+            
             dbContext.Database.EnsureCreated();
         }
     }
